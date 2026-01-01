@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vertex Labs</title>
+
+    <!-- Tailwind CDN (manual, sem instalação) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+
+
+    <!-- Configuração manual de tema -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#0B1F3B',
+              tech: '#38BDF8',
+              neon: '#22D3EE',
+            },
+            fontSize: {
+              hero: '3.5rem',
+            },
+          },
+        },
+      }
+    </script>
+  </head>
+  <body class="font-sans antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
