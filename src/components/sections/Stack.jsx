@@ -18,7 +18,7 @@ const techs = [
   { name: 'Tailwind', icon: <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind" className="h-10 w-10" /> },
   { name: 'Sass', icon: <img src="https://cdn.simpleicons.org/sass/CC6699" alt="Sass" className="h-10 w-10" /> },
   { name: 'Vue.js', icon: <img src="https://cdn.simpleicons.org/vuedotjs/4FC08D" alt="Vue.js" className="h-10 w-10" /> },
-  { name: 'AWS', icon: <img src="https://cdn.simpleicons.org/amazonwebservices/232F3E" alt="AWS" className="h-10 w-10" /> },
+  { name: 'Linux', icon: <img src="https://cdn.simpleicons.org/linux/000000" alt="Linux" className="h-10 w-10" /> },
 ]
 
 export default function Stack() {

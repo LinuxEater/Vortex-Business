@@ -33,7 +33,7 @@ export default function Projects() {
             <Link
               key={project.id}
               to={`/projects/${project.slug}`}
-              className="group border border-slate-200 rounded-2xl overflow-hidden bg-white transition hover:shadow-xl"
+              className="group border border-slate-200 rounded-2xl overflow-hidden bg-white transition duration-300 hover:shadow-xl hover:border-blue-700 hover:border-2"
             >
               {/* VÍDEO / PREVIEW */}
               <div className="h-48 bg-slate-100 flex items-center justify-center text-slate-400 text-sm">

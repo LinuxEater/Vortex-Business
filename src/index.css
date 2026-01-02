@@ -86,3 +86,19 @@ button:focus-visible {
   opacity: 1;
   transform: translateY(0);
 }
+
+@keyframes blinkShadow {
+  0%, 100% {
+    filter: drop-shadow(0 10px 15px rgba(0, 191, 255, 0.7)); /* Initial state */
+  }
+  25% {
+    filter: drop-shadow(0 15px 25px rgba(0, 191, 255, 0.85)); /* Growing */
+  }
+  75% {
+    filter: drop-shadow(0 25px 45px rgba(0, 191, 255, 1)); /* Peak intensity and size */
+  }
+}
+
+.animate-blink-shadow {
+  animation: blinkShadow 2s infinite alternate;
+}

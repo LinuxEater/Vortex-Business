@@ -1,3 +1,5 @@
+import hero_image from '../../assets/img/hero_image.png';
+
 export default function Hero() {
   return (
     <section className="relative w-full min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-50 to-white overflow-hidden">
@@ -38,13 +40,15 @@ export default function Hero() {
         </div>
 
         {/* Bloco visual */}
-        <div className="relative hidden lg:flex items-center justify-center">
-          <div className="w-full h-[420px] rounded-2xl bg-white shadow-2xl border border-slate-100 flex items-center justify-center">
-            <span className="text-slate-400 text-sm">
-              Vídeo institucional
-            </span>
-          </div>
-        </div>
+        {/* Bloco visual */}
+<div className="relative flex items-center justify-center min-h-[420px]">
+  <img
+    src={hero_image}
+    alt="Hero Image"
+    className="w-full max-w-lg object-contain drop-shadow-lg animate-blink-shadow"
+  />
+</div>
+
 
       </div>
     </section>
